@@ -1,0 +1,16 @@
+<div class="email-editor">
+    <span ng-repeat="emailItem in emailList" class="email-editor__email-item">
+        <span ng-class="{'email-editor__email-item__email-wrapper_invalid': !emailItem.valid}">
+            <span class="email-editor__email-item__email">{{emailItem.email}}</span>
+        </span>
+        
+        <span ng-click="removeEmailByIndex($index)" class="email-editor__email-item__remove"></span>
+    </span>
+
+    <input ng-model="newEmail"
+        ng-keypress="onInputKeyPress($event)"
+        ng-paste="onInputPaste($event)"
+        ng-blur="addEmailFromInput()"
+        placeholder="add more people..."
+        class="email-editor__new-email">
+</div>

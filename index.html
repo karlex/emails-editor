@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="emailsEditorApp">
+    <head>
+        <title>Sample project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body ng-controller="mainCtrl as mainCtrl">
+        <div class="form-section form-section_common">
+            <div class="app__title">
+                Share &ldquo;Board name&rdquo; with others
+            </div>
+
+            <div class="app__emails-editor-container">
+                <emails-editor instance="mainCtrl.emailsEditor"></emails-editor>
+            </div>
+        </div>
+        <div class="form-section">
+            <button ng-click="mainCtrl.addRandomEmail()"
+                class="btn btn-add" 
+                type="button">Add email</button>
+
+            <button ng-click="mainCtrl.showEmailsCount()"
+                class="btn btn-count" 
+                type="button">Get emails count</button>
+        </div>
+
+        <script src="bundle.js" charset="utf-8"></script>
+    </body>
+</html>

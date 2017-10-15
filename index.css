@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Myriad Pro";
+    font-weight: 400;
+    src: url(./fonts/myriad-pro-regular.otf);
+
+}
+@font-face {
+    font-family: "Myriad Pro";
+    font-weight: 300;
+    src: url(./fonts/myriad-pro-light.ttf);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Myriad Pro";
+    font-weight: normal;
+}
+.text-italic {
+    font-style: italic;
+}
+.form-section {
+    display: table;
+    padding: 30px 40px;
+}
+.form-section_common {
+    background-color: rgb(245, 245, 245);
+}
+.app__title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.1px;
+    margin-left: -1px;
+}
+.app__emails-editor-container {
+    width: 420px;
+    margin-top: 30px;
+}
+.btn {
+    background-color: #6699ff;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 13.5px;
+    margin-right: 20px;
+    letter-spacing: 0.44px;
+    text-align: center;
+    outline: none;
+    padding-top: 9px;
+    padding-bottom: 5px; 
+}
+.btn-add {
+    padding-left: 19px;
+    padding-right: 22px;
+}
+.btn-count {
+    padding-left: 11px;
+    padding-right: 11px;
+}
